@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo.png);
+background-position: center;
+}
+header {
+    background: royalblue;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img.logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    margin-left: 13px;
+    height: 70px; /* Ajusta la altura del logo según sea necesario */
+}
+
+nav {
+    background: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #007bff; /* Azul claro */
+    border-radius: 5px;
+}
+section {
+    padding: 20px;
+    margin: 10px;
+    background: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #f4f4f4;
+}
+.accordion {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: #444;
+    color: #fff;
+    font-size: 18px;
+}
+.active, .accordion:hover {
+    background-color: #555;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.panel.show {
+    display: block;
+}
+footer {
+    background: linear-gradient(90deg, #ff00cc, #3333ff, #ff33ff, #ff00cc, #3333ff, #ff33ff);
+    background-size: 600% 600%;
+    animation: rainbow 15s ease infinite;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+footer p strong {
+    font-size: 18px;
+    color: #fff;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.imagen-ajustada {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 30%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+    display: block; /* Permite que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
